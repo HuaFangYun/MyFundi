@@ -1,0 +1,346 @@
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: D:\Development\AfricanFarmersCommoditiesV2\AfricanFarmerCommodities.Web
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'CommodityUnitPrice' on entity type 'Commodity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'NumberOfUnits' on entity type 'Commodity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'Price' on entity type 'DealsPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'DryStorageCapacity' on entity type 'FoodHubStorage'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'RefreigeratedStorageCapacity' on entity type 'FoodHubStorage'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'UsedDryStorageCapacity' on entity type 'FoodHubStorage'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'UsedRefreigeratedStorageCapacity' on entity type 'FoodHubStorage'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'GrossCost' on entity type 'Invoice'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'NetCost' on entity type 'Invoice'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'PercentTaxAppliable' on entity type 'Invoice'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'ItemCost' on entity type 'Item'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'AirPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'BusPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'CarPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'MiniBusPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'PickupTruckPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'ShipPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'TaxiPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'TrainPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'TramPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'TruckPricing' on entity type 'TransportPricing'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'VechicleCapacity' on entity type 'VehicleCapacity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+fail: Microsoft.AspNetCore.SpaServices[0]
+      ERROR in services/MyFundiService.ts:2116:1 - error TS1010: '*/' expected.
+
+2116 
+     
+
+
+fail: Microsoft.AspNetCore.SpaServices[0]
+          ERROR in src/app/addLocation/addLocation.component.ts(2,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/addLocation/addLocation.component.ts(2,20): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/addLocation/addLocation.component.ts(23,80): error TS2339: Property 'PostOrCreateLocation' does not exist on type 'MyFundiService'.
+          src/app/addLocation/addLocation.component.ts(31,80): error TS2339: Property 'UpdateLocation' does not exist on type 'MyFundiService'.
+          src/app/addVehicle/addVehicle.component.ts(2,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/app/app.component.ts(4,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/app/app.component.ts(25,58): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/basket/basket.component.ts(6,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodity'.
+          src/app/basket/basket.component.ts(39,167): error TS2339: Property 'clientEmailAddress' does not exist on type 'typeof MyFundiService'.
+          src/app/contactus/contactus.component.ts(2,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IEmailMessage'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/crud-operations/address/address.component.ts(2,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/address/address.component.ts(28,85): error TS2339: Property 'GetAllAddresses' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/address/address.component.ts(42,80): error TS2339: Property 'PostOrCreateAddress' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/address/address.component.ts(55,80): error TS2339: Property 'UpdateAddress' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/address/address.component.ts(68,78): error TS2339: Property 'GetAddressById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/address/address.component.ts(75,78): error TS2339: Property 'DeleteAddress' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-category/commodityCategory.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodityCategory'.
+          src/app/crud-operations/commodity-category/commodityCategory.component.ts(26,78): error TS2339: Property 'PostOrCreateCommodityCategory' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-category/commodityCategory.component.ts(38,78): error TS2339: Property 'UpdateCommodityCategory' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-category/commodityCategory.component.ts(50,78): error TS2339: Property 'GetCommodityCategoryById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-category/commodityCategory.component.ts(57,78): error TS2339: Property 'DeleteCommodityCategory' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-category/commodityCategory.component.ts(72,94): error TS2339: Property 'GetAllCommodityCategories' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-unit/commodityUnit.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodityCategory'.
+          src/app/crud-operations/commodity-unit/commodityUnit.component.ts(3,63): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodityUnit'.
+          src/app/crud-operations/commodity-unit/commodityUnit.component.ts(25,78): error TS2339: Property 'PostOrCreateCommodityUnit' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-unit/commodityUnit.component.ts(38,78): error TS2339: Property 'UpdateCommodityUnit' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-unit/commodityUnit.component.ts(51,78): error TS2339: Property 'GetCommodityUnitById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-unit/commodityUnit.component.ts(58,78): error TS2339: Property 'DeleteCommodityUnit' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity-unit/commodityUnit.component.ts(74,90): error TS2339: Property 'GetAllCommodityUnits' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodity'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,22): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,32): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,76): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodityCategory'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,96): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodityUnit'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,112): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,122): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,132): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserDetail'.
+          src/app/crud-operations/commodity/commodity.component.ts(3,145): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IFarmer'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/crud-operations/commodity/commodity.component.ts(25,92): error TS2339: Property 'GetAllCommodities' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(26,94): error TS2339: Property 'GetAllCommodityCategories' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(27,92): error TS2339: Property 'GetAllCommodityUnits' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(28,82): error TS2339: Property 'GetAllCompanies' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(29,82): error TS2339: Property 'GetAllVehicles' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(30,84): error TS2339: Property 'GetAllFamers' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(60,62): error TS2339: Property 'userDetails' does not exist on type 'typeof MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(110,78): error TS2339: Property 'PostOrCreateCommodity' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(123,78): error TS2339: Property 'UpdateCommodity' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(136,78): error TS2339: Property 'GetCommodityById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/commodity/commodity.component.ts(144,78): error TS2339: Property 'DeleteCommodity' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/company/company.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+          src/app/crud-operations/company/company.component.ts(3,20): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/company/company.component.ts(3,30): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/company/company.component.ts(26,78): error TS2339: Property 'PostOrCreateCompany' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/company/company.component.ts(38,78): error TS2339: Property 'UpdateCompany' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/company/company.component.ts(50,78): error TS2339: Property 'GetCompanyById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/company/company.component.ts(57,78): error TS2339: Property 'DeleteCompany' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/company/company.component.ts(87,87): error TS2339: Property 'GetAllCompanies' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/company/company.component.ts(88,84): error TS2339: Property 'GetAllLocations' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/driver/driver.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IDriver'.
+          src/app/crud-operations/driver/driver.component.ts(3,19): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/driver/driver.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/driver/driver.component.ts(3,73): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/app/crud-operations/driver/driver.component.ts(3,83): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITransportSchedule'.
+          src/app/crud-operations/driver/driver.component.ts(29,78): error TS2339: Property 'PostOrCreateDriver' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/driver/driver.component.ts(43,78): error TS2339: Property 'UpdateDriver' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/driver/driver.component.ts(55,78): error TS2339: Property 'GetDriverById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/driver/driver.component.ts(65,78): error TS2339: Property 'DeleteDriver' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/driver/driver.component.ts(91,84): error TS2339: Property 'GetAllDrivers' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/driver/driver.component.ts(92,81): error TS2339: Property 'GetAllVehicles' does not exist on type 'MyFundiService'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/crud-operations/driver/driver.component.ts(93,94): error TS2339: Property 'GetAllTransportSchedules' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/farmer/farmer.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IFarmer'.
+          src/app/crud-operations/farmer/farmer.component.ts(3,18): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/farmer/farmer.component.ts(3,28): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/farmer/farmer.component.ts(3,72): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+          src/app/crud-operations/farmer/farmer.component.ts(27,78): error TS2339: Property 'PostOrCreateFarmer' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/farmer/farmer.component.ts(39,78): error TS2339: Property 'UpdateFarmer' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/farmer/farmer.component.ts(51,78): error TS2339: Property 'GetFarmerById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/farmer/farmer.component.ts(60,78): error TS2339: Property 'DeleteFarmer' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/farmer/farmer.component.ts(98,84): error TS2339: Property 'GetAllFamers' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/farmer/farmer.component.ts(99,85): error TS2339: Property 'GetAllAddresses' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/farmer/farmer.component.ts(100,82): error TS2339: Property 'GetAllCompanies' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IFoodHub'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(3,20): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(3,30): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(27,78): error TS2339: Property 'PostOrCreateFoodHub' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(40,78): error TS2339: Property 'UpdateFoodHub' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(52,78): error TS2339: Property 'GetFoodHubById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(63,78): error TS2339: Property 'DeleteFoodHub' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(88,86): error TS2339: Property 'GetAllFoodHubs' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhub/foodhub.component.ts(89,84): error TS2339: Property 'GetAllLocations' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IFoodHubStorage'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(3,27): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(3,37): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(3,81): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IFoodHub'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(3,91): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICommodityUnit'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(29,78): error TS2339: Property 'PostOrCreateFoodHubStorage' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(44,78): error TS2339: Property 'UpdateFoodHubStorage' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(56,78): error TS2339: Property 'GetFoodHubStorageById' does not exist on type 'MyFundiService'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(65,78): error TS2339: Property 'DeleteFoodHubStorage' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(82,97): error TS2339: Property 'GetAllFoodHubStorages' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(83,86): error TS2339: Property 'GetAllFoodHubs' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/foodhubStorage/foodhubStorage.component.ts(84,89): error TS2339: Property 'GetAllCommodityUnits' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITransportSchedule'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(3,39): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(3,83): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITransportPricing'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(3,102): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(3,112): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IIntermediateSchedule'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(27,78): error TS2339: Property 'PostOrCreateIntermediateSchedule' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(42,78): error TS2339: Property 'UpdateIntermediateSchedule' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(55,78): error TS2339: Property 'GetIntermediateScheduleById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(62,78): error TS2339: Property 'DeleteIntermediateSchedule' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(93,99): error TS2339: Property 'GetAllIntermediateSchedules' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(94,91): error TS2339: Property 'GetAllTransportPricings' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(95,84): error TS2339: Property 'GetAllLocations' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/intermediate-schedules/intermediateschedules.component.ts(96,82): error TS2339: Property 'GetAllVehicles' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/location/location.component.ts(2,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/location/location.component.ts(2,20): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/location/location.component.ts(24,80): error TS2339: Property 'PostOrCreateLocation' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/location/location.component.ts(36,80): error TS2339: Property 'UpdateLocation' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/location/location.component.ts(48,78): error TS2339: Property 'GetLocationById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/location/location.component.ts(55,78): error TS2339: Property 'DeleteLocation' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/location/location.component.ts(71,82): error TS2339: Property 'GetAllAddresses' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/location/location.component.ts(72,84): error TS2339: Property 'GetAllLocations' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITransportPricing'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(3,28): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(3,38): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(3,82): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITransportSchedule'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(26,78): error TS2339: Property 'PostOrCreateTransportPricing' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(39,78): error TS2339: Property 'UpdateTransportPricing' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(52,78): error TS2339: Property 'GetTransportPricingById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(59,78): error TS2339: Property 'DeleteTransportPricing' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-pricing/transportPricing.component.ts(75,91): error TS2339: Property 'GetAllTransportPricings' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITransportSchedule'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(3,39): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(3,83): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITransportPricing'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(3,102): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(3,112): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IIntermediateSchedule'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(37,78): error TS2339: Property 'PostOrCreateTransportSchedule' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(57,78): error TS2339: Property 'UpdateTransportSchedule' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(70,78): error TS2339: Property 'GetTransportScheduleId' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(85,78): error TS2339: Property 'DeleteTransportSchedule' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(116,96): error TS2339: Property 'GetAllTransportSchedules' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(117,91): error TS2339: Property 'GetAllTransportPricings' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(118,84): error TS2339: Property 'GetAllLocations' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(119,82): error TS2339: Property 'GetAllVehicles' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/transport-schedule/transportSchedule.component.ts(194,95): error TS2339: Property 'GetIntermediateScheduleByTransportScheduleId' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-capacity/vehicleCapacity.component.ts(2,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCapacity'.
+          src/app/crud-operations/vehicle-capacity/vehicleCapacity.component.ts(25,78): error TS2339: Property 'PostOrCreateVehicleCapacity' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-capacity/vehicleCapacity.component.ts(38,78): error TS2339: Property 'UpdateVehicleCapacity' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-capacity/vehicleCapacity.component.ts(51,91): error TS2339: Property 'GetVehicleCapacityById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-capacity/vehicleCapacity.component.ts(57,78): error TS2339: Property 'DeleteVehicleCapacity' does not exist on type 'MyFundiService'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/crud-operations/vehicle-capacity/vehicleCapacity.component.ts(77,90): error TS2339: Property 'GetAllVehicleCapacities' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCategory'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(3,28): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(3,38): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(3,82): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCapacity'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(26,78): error TS2339: Property 'PostOrCreateVehicleCategory' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(39,78): error TS2339: Property 'UpdateVehicleCategory' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(52,78): error TS2339: Property 'GetVehicleCategoryById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(59,78): error TS2339: Property 'DeleteVehicleCategory' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle-category/vehicleCategory.component.ts(81,92): error TS2339: Property 'GetAllVehicleCategories' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(3,19): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(3,73): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCategory'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(3,91): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(3,101): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCapacity'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(29,78): error TS2339: Property 'PostOrCreateVehicle' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(45,78): error TS2339: Property 'UpdateVehicle' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(58,78): error TS2339: Property 'GetVehiclById' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(68,78): error TS2339: Property 'DeleteVehicle' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(93,82): error TS2339: Property 'GetAllVehicles' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(94,92): error TS2339: Property 'GetAllVehicleCategories' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(95,85): error TS2339: Property 'GetAllCompanies' does not exist on type 'MyFundiService'.
+          src/app/crud-operations/vehicle/vehicle.component.ts(96,90): error TS2339: Property 'GetAllVehicleCapacities' does not exist on type 'MyFundiService'.
+          src/app/failure/failure.component.ts(2,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IEmailMessage'.
+          src/app/fetch-data/fetch-data.component.ts(4,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocationWeather'.
+          src/app/fetch-data/fetch-data.component.ts(25,93): error TS2339: Property 'GetSearchLocationWeather' does not exist on type 'MyFundiService'.
+          src/app/forgotPassword/forgotPassword.component.ts(2,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/forgotPassword/forgotPassword.component.ts(2,53): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserDetail'.
+          src/app/home/home.component.ts(2,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/app/home/home.component.ts(2,20): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/app/installments/installments.component.ts(24,139): error TS2339: Property 'clientEmailAddress' does not exist on type 'typeof MyFundiService'.
+          src/app/installments/installments.component.ts(38,127): error TS2339: Property 'clientEmailAddress' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(4,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILogInStatus'.
+          src/app/login/login.component.ts(4,57): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserDetail'.
+          src/app/login/login.component.ts(4,70): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/app/login/login.component.ts(57,41): error TS2339: Property 'userDetails' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(62,77): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(64,84): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(74,41): error TS2339: Property 'isLoginPage' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(75,41): error TS2339: Property 'SetUserEmail' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(83,76): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(84,81): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/login/login.component.ts(86,41): error TS2339: Property 'SetUserEmail' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(4,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/app/nav-menu/nav-menu.component.ts(4,56): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserDetail'.
+          src/app/nav-menu/nav-menu.component.ts(36,73): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(37,78): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(40,80): error TS2339: Property 'VerifyLoggedInUser' does not exist on type 'MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(45,43): error TS2339: Property 'SetUserEmail' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(46,43): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(48,45): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(54,43): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(55,43): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(66,37): error TS2339: Property 'isLoginPage' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(75,73): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(76,78): error TS2339: Property 'actUserStatus' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(78,37): error TS2339: Property 'SetUserEmail' does not exist on type 'typeof MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(80,78): error TS2339: Property 'LogOut' does not exist on type 'MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(102,86): error TS2339: Property 'GetAllUserRoles' does not exist on type 'MyFundiService'.
+          src/app/nav-menu/nav-menu.component.ts(102,134): error TS2339: Property 'clientEmailAddress' does not exist on type 'typeof MyFundiService'.
+          src/app/newroles/newroles.component.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserRole'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/app/qrCodeReader/qrCodeReader.component.ts(6,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/app/qrCodeReader/qrCodeReader.component.ts(6,56): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserDetail'.
+          src/app/qrCodeReader/qrCodeReader.component.ts(23,73): error TS2339: Property 'VerifyQrcodeScan' does not exist on type 'MyFundiService'.
+          src/app/qrCodeReader/qrCodeReader.component.ts(49,56): error TS2339: Property 'userDetails' does not exist on type 'typeof MyFundiService'.
+          src/app/register/register.component.ts(5,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILogInStatus'.
+          src/app/register/register.component.ts(5,57): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserDetail'.
+          src/app/register/register.component.ts(5,70): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/app/sectionscontact/sectionscontact.component.ts(2,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IEmailMessage'.
+          src/app/userroles/userroles.component.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserRole'.
+          src/app/vehiclemonitor/vehiclemonitor.component.ts(2,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleLocationMonitor'.
+          src/guards/AdminAuthGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthDriverGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthFarmerGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthGovernmentGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthGuestGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthRetailerGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthStandardUserGuard.ts(3,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/guards/AuthWholeSalerGuard.ts(4,43): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IUserStatus'.
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(3,19): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(3,73): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCategory'.
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(3,91): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(3,101): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IFoodHubCommodityStorageUsage'.
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(32,106): error TS2339: Property 'GetallFoodHubStorageAvailabilityStorage' does not exist on type 'MyFundiService'.
+          src/metricsreporting/allFoodHubCommoditiesStockStorageUsage/allFoodHubCommoditiesStockStorageUsage.component.ts(36,61): error TS2339: Property 'GetallFoodHubStorageAvailabilityStorage' does not exist on type 'MyFundiService'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(3,19): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(3,73): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCategory'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(3,91): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(3,101): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IFoodHubCommodityStorageUsage'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(46,61): error TS2339: Property 'GetallFoodHubStorageAvailabilityStorage' does not exist on type 'MyFundiService'.
+          src/metricsreporting/foodHubCommoditiesStockStorageUsage/foodHubCommoditiesStockStorageUsage.component.ts(61,61): error TS2339: Property 'GetFoodHubStorageAvailabilityStorageByFoodHubId' does not exist on type 'MyFundiService'.
+          src/metricsreporting/scheduledVehiclesByStorageCapacity/scheduledVehiclesByStorageCapacity.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAllscheduledVehiclesByStorageCapacity'.
+          src/metricsreporting/scheduledVehiclesByStorageCapacity/scheduledVehiclesByStorageCapacity.component.ts(3,50): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/metricsreporting/scheduledVehiclesByStorageCapacity/scheduledVehiclesByStorageCapacity.component.ts(3,59): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/metricsreporting/scheduledVehiclesByStorageCapacity/scheduledVehiclesByStorageCapacity.component.ts(3,69): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/metricsreporting/scheduledVehiclesByStorageCapacity/scheduledVehiclesByStorageCapacity.component.ts(3,113): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCategory'.
+          src/metricsreporting/scheduledVehiclesByStorageCapacity/scheduledVehiclesByStorageCapacity.component.ts(3,131): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+          src/metricsreporting/scheduledVehiclesByStorageCapacity/scheduledVehiclesByStorageCapacity.component.ts(34,115): error TS2339: Property 'GetallScheduledVehiclesGroupedByStorageCapacity' does not exist on type 'MyFundiService'.
+          src/metricsreporting/top5DryCommoditiesInDemandRatingAccordingToStorage/top5DryCommoditiesInDemandRatingAccordingToStorage.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/metricsreporting/top5DryCommoditiesInDemandRatingAccordingToStorage/top5DryCommoditiesInDemandRatingAccordingToStorage.component.ts(3,19): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+      
+fail: Microsoft.AspNetCore.SpaServices[0]
+          src/metricsreporting/top5DryCommoditiesInDemandRatingAccordingToStorage/top5DryCommoditiesInDemandRatingAccordingToStorage.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/metricsreporting/top5DryCommoditiesInDemandRatingAccordingToStorage/top5DryCommoditiesInDemandRatingAccordingToStorage.component.ts(3,73): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicleCategory'.
+          src/metricsreporting/top5DryCommoditiesInDemandRatingAccordingToStorage/top5DryCommoditiesInDemandRatingAccordingToStorage.component.ts(3,91): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ICompany'.
+          src/metricsreporting/top5DryCommoditiesInDemandRatingAccordingToStorage/top5DryCommoditiesInDemandRatingAccordingToStorage.component.ts(3,101): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ITop5DryStorageCommoditiesInDemandRating'.
+          src/metricsreporting/top5DryCommoditiesInDemandRatingAccordingToStorage/top5DryCommoditiesInDemandRatingAccordingToStorage.component.ts(32,118): error TS2339: Property 'GetTop5DryCommoditiesInDemandRatingAccordingToStorageFacilities' does not exist on type 'MyFundiService'.
+          src/metricsreporting/top5FarmerCommoditiesAnalysisInUnitPricing/top5FarmerCommoditiesAnalysisInUnitPricing.component.ts(3,10): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IVehicle'.
+          src/metricsreporting/top5FarmerCommoditiesAnalysisInUnitPricing/top5FarmerCommoditiesAnalysisInUnitPricing.component.ts(3,19): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'IAddress'.
+          src/metricsreporting/top5FarmerCommoditiesAnalysisInUnitPricing/top5FarmerCommoditiesAnalysisInUnitPricing.component.ts(3,29): error TS2305: Module '"D:/Development/AfricanFarmersCommoditiesV2/AfricanFarmerCommodities.Web/ClientApp/src/services/MyFundiService"' has no exported member 'ILocation'.
+          src/metricsreporting/top5FarmerCommoditiesAnalysisInUnitPricing/top5FarmerCommoditiesAnalysisInUnitPricing.component.ts

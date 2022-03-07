@@ -1,0 +1,92 @@
+<div class="container-fluid" style="background-color: #EEEEEE; text-align: left;">
+  <section>
+    <a [routerLink]="['/create-profile']">
+      Create Or Edit Profile
+    </a>
+  </section>
+  <h1 style="text-align:center !important;padding:10px 0px !important;">{{userDetails.firstName}} {{userDetails.lastName}} {{userRoles.indexOf("Fundi") > -1 ?"Fundi":"Client"}} Profile</h1>
+  <section id="Profile">
+    <div class="row" style="text-align: center !important; align-content: center !important;">
+      <div class="col-lg-12">
+        <img id="profileImage" src="/FundiProfile/GetFundiProfileImage?username={{userDetails.username}}" alt="profileImage" style="width:250px; height:auto; align-content:center !important;" />
+      </div>
+    </div>
+    <div class="row" style="text-align: center !important; align-content: center !important;">
+      <div class="col-lg-12">
+        <a routerLink="/FundiProfile/GetFundiCV?username={{userDetails.username}}" routerLinkActive='link-active' style="color:blue !important;">Download {{userDetails.firstName}} {{userDetails.lastName}} Profile CV</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="profileRating">
+        <h5>Profile Rating</h5>
+        <ul>
+          <li *ngFor="let fundiRating of fundiRatings">
+            <h5>
+              {{fundiRating.rating}} out of 5
+            </h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="workCategories">
+        <h5>Work Categories</h5>
+        <ul>
+          <li *ngFor="let workCategory of workCategories">
+            {{workCategory.workCategoryType}}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="workCategories">
+        <h5>Profile Summary</h5>
+        <div class="col-lg-12" id="profileSummary">
+          {{profile.profileSummary}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h5>Skills</h5>
+        <div class="col-lg-12" id="skills">
+          {{profile.skills}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h5>Power Tools Used</h5>
+        <div class="col-lg-12" id="usedPowerTools">
+          {{profile.usedPowerTools}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="workCategories">
+        <h5>Certifications</h5>
+        <div class="col-lg-12" id="certifications">
+          <ul>
+            <li *ngFor="let cert of certifications">
+              {{cert.certificationName}}<br />
+              <div>{{cert.certificationDescription}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h5>Courses Attended</h5>
+        <div class="col-lg-12" id="courses">
+          <ul>
+            <li *ngFor="let course of courses">
+              {{course.courseName}}<br />
+              <div>{{course.courseDescription}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

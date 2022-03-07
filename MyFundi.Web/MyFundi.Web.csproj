@@ -1,0 +1,125 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.22" />
+    <PackageReference Include="QRCoder" Version="1.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\images\brickWall.jpg" />
+    <Content Remove="wwwroot\assets\images\HappyGrad.jpg" />
+    <Content Remove="wwwroot\assets\images\martin.jpg" />
+    <Content Remove="wwwroot\assets\images\paypal_logo.gif" />
+    <Content Remove="wwwroot\assets\images\ug-flag.gif" />
+    <Content Remove="wwwroot\assets\images\uk-flag.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\dist\assets\images\handyman.jpg" />
+    <None Remove="ClientApp\dist\assets\images\handymantools.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\dist\assets\images\handyman.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\dist\assets\images\handymantools.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLG.Business\BLG.Business.csproj" />
+    <ProjectReference Include="..\ExcelAccessDataEngine\ExcelAccessDataEngine.csproj" />
+    <ProjectReference Include="..\MyFundi.AppConfigurations\MyFundi.AppConfigurations.csproj" />
+    <ProjectReference Include="..\MyFundi.DataAccess\MyFundi.DataAccess.csproj" />
+    <ProjectReference Include="..\MyFundi.Domain\MyFundi.Domain.csproj" />
+    <ProjectReference Include="..\MyFundi.Servicves\MyFundi.Services.csproj" />
+    <ProjectReference Include="..\MyFundi.UnitOfWork\MyFundi.UnitOfWork.csproj" />
+    <ProjectReference Include="..\PaymentCalculater\PaymentCalculater.csproj" />
+    <ProjectReference Include="..\PaymentGateway\PaymentsGateway.csproj" />
+    <ProjectReference Include="..\PaypalFacility\PaypalFacility.csproj" />
+    <ProjectReference Include="..\ServiceEndPoint\ServiceEndPoint.csproj" />
+    <ProjectReference Include="..\SimbaToursEastAfrica.Caching\SimbaToursEastAfrica.Caching.csproj" />
+    <ProjectReference Include="..\SimbaToursEastAfrica.SocialMedia\SimbaToursEastAfrica.SocialMedia.csproj" />
+    <ProjectReference Include="..\Twitter\Twitter.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AesCryptoSystemExtra">
+      <HintPath>extLibs\AesCryptoSystemExtra.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\metricsreporting\" />
+    <Folder Include="extLibs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\images\brickWall.jpg" />
+    <None Include="wwwroot\assets\images\HappyGrad.jpg" />
+    <None Include="wwwroot\assets\images\martin.jpg" />
+    <None Include="wwwroot\assets\images\paypal_logo.gif" />
+    <None Include="wwwroot\assets\images\ug-flag.gif" />
+    <None Include="wwwroot\assets\images\uk-flag.gif" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

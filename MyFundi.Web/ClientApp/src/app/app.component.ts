@@ -1,0 +1,36 @@
+import { Component, Input, OnInit} from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import 'rxjs/add/operator/filter';
+import { IUserStatus, MyFundiService } from '../services/myFundiService';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html'
+})
+export class AppComponent implements OnInit{
+  public title = 'app';
+   presentLearnMore: boolean;
+   actUserStatus: IUserStatus;
+
+  constructor(private router: Router) {
+    router.events
+      .filter(event => event instanceof NavigationEnd)
+      .subscribe((event: NavigationEnd) => {
+        // You only receive NavigationEnd events
+        this.presentLearnMore = this.isPresentLearnMore(event.url);
+      });
+
+  }
+  ngOnInit(){
+    this.actUserStatus = MyFundiService.actUserStatus;
+  }
+  private isPresentLearnMore(url:string): boolean {
+    this.presentLearnMore = false;
+    if (url.toLowerCase().indexOf('/login') > -1 ||
+      url.toLowerCase().indexOf('/register') > -1 ||
+      url.toLowerCase().indexOf('/forgot-password') > -1) {
+      return false;
+    }
+    else { return true;}
+  }
+}
