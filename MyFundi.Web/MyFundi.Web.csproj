@@ -63,7 +63,7 @@
     <ProjectReference Include="..\MyFundi.AppConfigurations\MyFundi.AppConfigurations.csproj" />
     <ProjectReference Include="..\MyFundi.DataAccess\MyFundi.DataAccess.csproj" />
     <ProjectReference Include="..\MyFundi.Domain\MyFundi.Domain.csproj" />
-    <ProjectReference Include="..\MyFundi.Servicves\MyFundi.Services.csproj" />
+    <ProjectReference Include="..\MyFundi.Services\MyFundi.Services.csproj" />
     <ProjectReference Include="..\MyFundi.UnitOfWork\MyFundi.UnitOfWork.csproj" />
     <ProjectReference Include="..\PaymentCalculater\PaymentCalculater.csproj" />
     <ProjectReference Include="..\PaymentGateway\PaymentsGateway.csproj" />

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyFundi.Servicves\MyFundi.Services.csproj" />
+    <ProjectReference Include="..\MyFundi.Services\MyFundi.Services.csproj" />
   </ItemGroup>
 
 </Project>
