@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj": {}
+    "E:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj": {}
   },
   "projects": {
-    "C:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj": {
+    "E:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj",
+        "projectUniqueName": "E:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj",
         "projectName": "PaymentsGateway",
-        "projectPath": "C:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj",
-        "packagesPath": "C:\\Users\\martinokello\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\MyFundi\\PaymentGateway\\obj\\",
+        "projectPath": "E:\\Development\\MyFundi\\PaymentGateway\\PaymentsGateway.csproj",
+        "packagesPath": "C:\\Users\\mart4\\.nuget\\packages\\",
+        "outputPath": "E:\\Development\\MyFundi\\PaymentGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\martinokello\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mart4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,14 +28,15 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj": {
-                "projectPath": "C:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj"
+              "E:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj": {
+                "projectPath": "E:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj"
               }
             }
           }
@@ -62,25 +65,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj": {
+    "E:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj",
+        "projectUniqueName": "E:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj",
         "projectName": "PaypalFacility",
-        "projectPath": "C:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj",
-        "packagesPath": "C:\\Users\\martinokello\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\MyFundi\\PaypalFacility\\obj\\",
+        "projectPath": "E:\\Development\\MyFundi\\PaypalFacility\\PaypalFacility.csproj",
+        "packagesPath": "C:\\Users\\mart4\\.nuget\\packages\\",
+        "outputPath": "E:\\Development\\MyFundi\\PaypalFacility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\martinokello\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mart4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -88,6 +93,7 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -134,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
