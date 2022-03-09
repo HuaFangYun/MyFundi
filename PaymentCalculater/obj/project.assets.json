@@ -1,7 +1,8 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {},
+    ".NETCoreApp,Version=v3.1/win-x64": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
@@ -16,11 +17,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Development\\MyFundi\\PaymentCalculater\\PaymentCalculater.csproj",
+      "projectUniqueName": "C:\\Development\\MyFundi\\PaymentCalculater\\PaymentCalculater.csproj",
       "projectName": "PaymentCalculater",
-      "projectPath": "E:\\Development\\MyFundi\\PaymentCalculater\\PaymentCalculater.csproj",
+      "projectPath": "C:\\Development\\MyFundi\\PaymentCalculater\\PaymentCalculater.csproj",
       "packagesPath": "C:\\Users\\mart4\\.nuget\\packages\\",
-      "outputPath": "E:\\Development\\MyFundi\\PaymentCalculater\\obj\\",
+      "outputPath": "C:\\Development\\MyFundi\\PaymentCalculater\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -71,6 +72,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }

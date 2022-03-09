@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DocX7ZVUGuzxVkeHQIe9TZcLT8fIrbL/Rgwu39d7hRVgAk/NC8mb/ON/p0UOvYRl34BBk9+xN+RBcg8lb6oRKg==",
+  "dgSpecHash": "VXgObYex7jO3hC9qGaqKekb1Kc5l6p3Ryrcq26WHX2XqNAi1YliUCWqXIyDf0rJGUDVmpo8UovGVUBeENwaEfQ==",
   "success": true,
-  "projectFilePath": "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj",
+  "projectFilePath": "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mart4\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\mart4\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

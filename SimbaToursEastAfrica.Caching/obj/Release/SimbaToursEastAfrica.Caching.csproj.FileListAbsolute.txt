@@ -461,3 +461,12 @@ E:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAf
 E:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.csproj.CopyComplete
 E:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.dll
 E:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.pdb
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\bin\Release\SimbaToursEastAfrica.Caching.dll.config
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\bin\Release\SimbaToursEastAfrica.Caching.dll
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\bin\Release\SimbaToursEastAfrica.Caching.pdb
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\bin\Release\Newtonsoft.Json.dll
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.csproj.AssemblyReference.cache
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.csproj.CoreCompileInputs.cache
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.csproj.CopyComplete
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.dll
+C:\Development\MyFundi\SimbaToursEastAfrica.Caching\obj\Release\SimbaToursEastAfrica.Caching.pdb

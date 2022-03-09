@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HpaiRCAu8iLRbbJY97Bb4H+WAj8KWf4IDQEtm1shtJK/biSgS2HELweGh6IhRhQz6mHqpd140tqFvZakn0Np/A==",
+  "dgSpecHash": "jqB/lPwQmpdKp2CKhClhnA2p0b322fz1y7B8AoqrEUY8Bo3TAAhu19Z8+c/jjM3GLPolX53ahOnk+8EXqtt39g==",
   "success": true,
-  "projectFilePath": "E:\\Development\\MyFundi\\PaymentCalculater\\PaymentCalculater.csproj",
+  "projectFilePath": "C:\\Development\\MyFundi\\PaymentCalculater\\PaymentCalculater.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

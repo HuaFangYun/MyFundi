@@ -1167,9 +1167,6 @@ E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\Newtonsoft.Jso
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\SimbaToursEastAfrica.Caching.dll
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Buffers.dll
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Memory.dll
-E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Numerics.Vectors.dll
-E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.ValueTuple.dll
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\Twitter.dll
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
@@ -1181,9 +1178,13 @@ E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\obj\Debug\SimbaToursEast
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\obj\Debug\SimbaToursEastAfrica.SocialMedia.csproj.CopyComplete
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\obj\Debug\SimbaToursEastAfrica.SocialMedia.dll
 E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\obj\Debug\SimbaToursEastAfrica.SocialMedia.pdb
+E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Numerics.Vectors.dll
+E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.ValueTuple.dll
 C:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\SimbaToursEastAfrica.SocialMedia.dll.config
 C:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\SimbaToursEastAfrica.SocialMedia.dll
 C:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\SimbaToursEastAfrica.SocialMedia.pdb
+C:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\Newtonsoft.Json.dll
 C:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\SimbaToursEastAfrica.Caching.dll
 C:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Buffers.dll
 C:\Development\MyFundi\SimbaToursEastAfrica.SocialMedia\bin\Debug\System.Memory.dll

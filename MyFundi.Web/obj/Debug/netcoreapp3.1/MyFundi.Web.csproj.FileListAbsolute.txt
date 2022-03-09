@@ -176,6 +176,7 @@ E:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.csproj.Co
 E:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.dll
 E:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.pdb
 E:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.genruntimeconfig.cache
+E:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\package-lock.json
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7\Content\Areas\HelpPage\Views\Web.config
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe.config
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe.config
@@ -186,6 +187,8 @@ C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\packages\Microsoft.Co
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\package.json
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\MyFundi.Web.StaticWebAssets.xml
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\MyFundi.Web.exe
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\MyFundi.Web.deps.json
@@ -331,6 +334,7 @@ C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\Twitter.pdb
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\BLGWeather.Domain.pdb
 C:\Development\MyFundi\MyFundi.Web\bin\Debug\netcoreapp3.1\AesCryptoSystemExtra.pdb
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.csproj.AssemblyReference.cache
+C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.AssemblyInfoInputs.cache
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.AssemblyInfo.cs
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.csproj.CoreCompileInputs.cache
@@ -340,7 +344,6 @@ C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.RazorAsse
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.RazorAssemblyInfo.cs
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\staticwebassets\MyFundi.Web.StaticWebAssets.Manifest.cache
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\staticwebassets\MyFundi.Web.StaticWebAssets.xml
-C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\scopedcss\bundle\MyFundi.Web.styles.css
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.TagHelpers.input.cache
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.TagHelpers.output.cache
 C:\Development\MyFundi\MyFundi.Web\obj\Debug\netcoreapp3.1\MyFundi.Web.RazorCoreGenerate.cache

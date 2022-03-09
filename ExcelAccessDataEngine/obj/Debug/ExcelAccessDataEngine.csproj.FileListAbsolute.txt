@@ -78,7 +78,6 @@ E:\Development\MyFundi\ExcelAccessDataEngine\obj\Debug\ExcelAccessDataEngine.pdb
 E:\Development\MyFundi\ExcelAccessDataEngine\obj\Debug\ExcelAccessDataEngine.csproj.AssemblyReference.cache
 C:\Development\MyFundi\ExcelAccessDataEngine\bin\Debug\ExcelAccessDataEngine.dll
 C:\Development\MyFundi\ExcelAccessDataEngine\bin\Debug\ExcelAccessDataEngine.pdb
-C:\Development\MyFundi\ExcelAccessDataEngine\obj\Debug\ExcelAccessDataEngine.csproj.AssemblyReference.cache
 C:\Development\MyFundi\ExcelAccessDataEngine\obj\Debug\ExcelAccessDataEngine.csproj.CoreCompileInputs.cache
 C:\Development\MyFundi\ExcelAccessDataEngine\obj\Debug\ExcelAccessDataEngine.csproj.CopyComplete
 C:\Development\MyFundi\ExcelAccessDataEngine\obj\Debug\ExcelAccessDataEngine.dll

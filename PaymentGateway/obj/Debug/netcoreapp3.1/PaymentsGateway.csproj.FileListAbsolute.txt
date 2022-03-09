@@ -43,6 +43,7 @@ C:\Development\MyFundi\PaymentGateway\bin\Debug\netcoreapp3.1\PaymentsGateway.pd
 C:\Development\MyFundi\PaymentGateway\bin\Debug\netcoreapp3.1\PaypalFacility.dll
 C:\Development\MyFundi\PaymentGateway\bin\Debug\netcoreapp3.1\PaypalFacility.pdb
 C:\Development\MyFundi\PaymentGateway\obj\Debug\netcoreapp3.1\PaymentsGateway.csproj.AssemblyReference.cache
+C:\Development\MyFundi\PaymentGateway\obj\Debug\netcoreapp3.1\PaymentsGateway.GeneratedMSBuildEditorConfig.editorconfig
 C:\Development\MyFundi\PaymentGateway\obj\Debug\netcoreapp3.1\PaymentsGateway.AssemblyInfoInputs.cache
 C:\Development\MyFundi\PaymentGateway\obj\Debug\netcoreapp3.1\PaymentsGateway.AssemblyInfo.cs
 C:\Development\MyFundi\PaymentGateway\obj\Debug\netcoreapp3.1\PaymentsGateway.csproj.CoreCompileInputs.cache

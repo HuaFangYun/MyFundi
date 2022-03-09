@@ -33,6 +33,7 @@ C:\Development\MyFundi\ServiceEndPoint\bin\Debug\netcoreapp3.1\MyFundi.DataAcces
 C:\Development\MyFundi\ServiceEndPoint\bin\Debug\netcoreapp3.1\MyFundi.Domain.pdb
 C:\Development\MyFundi\ServiceEndPoint\bin\Debug\netcoreapp3.1\MyFundi.Services.pdb
 C:\Development\MyFundi\ServiceEndPoint\obj\Debug\netcoreapp3.1\ServiceEndPoint.csproj.AssemblyReference.cache
+C:\Development\MyFundi\ServiceEndPoint\obj\Debug\netcoreapp3.1\ServiceEndPoint.GeneratedMSBuildEditorConfig.editorconfig
 C:\Development\MyFundi\ServiceEndPoint\obj\Debug\netcoreapp3.1\ServiceEndPoint.AssemblyInfoInputs.cache
 C:\Development\MyFundi\ServiceEndPoint\obj\Debug\netcoreapp3.1\ServiceEndPoint.AssemblyInfo.cs
 C:\Development\MyFundi\ServiceEndPoint\obj\Debug\netcoreapp3.1\ServiceEndPoint.csproj.CoreCompileInputs.cache

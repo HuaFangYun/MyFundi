@@ -85,7 +85,6 @@ E:\Development\MyFundi\Twitter\obj\Debug\Twitter.csproj.AssemblyReference.cache
 C:\Development\MyFundi\Twitter\bin\Debug\Twitter.dll
 C:\Development\MyFundi\Twitter\bin\Debug\Twitter.pdb
 C:\Development\MyFundi\Twitter\bin\Debug\Newtonsoft.Json.dll
-C:\Development\MyFundi\Twitter\obj\Debug\Twitter.csproj.AssemblyReference.cache
 C:\Development\MyFundi\Twitter\obj\Debug\Twitter.csproj.CoreCompileInputs.cache
 C:\Development\MyFundi\Twitter\obj\Debug\Twitter.csproj.CopyComplete
 C:\Development\MyFundi\Twitter\obj\Debug\Twitter.dll

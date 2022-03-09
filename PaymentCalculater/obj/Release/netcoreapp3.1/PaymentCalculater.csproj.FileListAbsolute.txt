@@ -8,3 +8,13 @@ E:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalcul
 E:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.dll
 E:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.pdb
 E:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.csproj.AssemblyReference.cache
+C:\Development\MyFundi\PaymentCalculater\bin\Release\netcoreapp3.1\PaymentCalculater.deps.json
+C:\Development\MyFundi\PaymentCalculater\bin\Release\netcoreapp3.1\PaymentCalculater.dll
+C:\Development\MyFundi\PaymentCalculater\bin\Release\netcoreapp3.1\PaymentCalculater.pdb
+C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.csproj.AssemblyReference.cache
+C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.AssemblyInfoInputs.cache
+C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.AssemblyInfo.cs
+C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.csproj.CoreCompileInputs.cache
+C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.dll
+C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.pdb

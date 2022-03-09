@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4hpxh0zXLvDunO9dsbW7KVMxpJSh1/HmyRlFkCr45FDUWAhTRzmz4a2cev8i4oOtUIDuFW1LoczkocC+q2OMJw==",
+  "dgSpecHash": "3JjNi4kbFpKiQtSxJc5pYxDlj4YQFJCpL9t2viUD+6WKGOnmYsfPCmBiUCcrSQJfaawitTtrDNg5pmZ79qno5w==",
   "success": true,
-  "projectFilePath": "E:\\Development\\MyFundi\\MyFundi.Web\\MyFundi.Web.csproj",
+  "projectFilePath": "C:\\Development\\MyFundi\\MyFundi.Web\\MyFundi.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mart4\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\mart4\\.nuget\\packages\\identitymodel\\4.0.0\\identitymodel.4.0.0.nupkg.sha512",

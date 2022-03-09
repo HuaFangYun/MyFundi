@@ -58,3 +58,13 @@ E:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.csproj.CoreCompileI
 E:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.csproj.CopyComplete
 E:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.dll
 E:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.pdb
+C:\Development\MyFundi\BLG.Business\bin\Release\BLG.Business.dll
+C:\Development\MyFundi\BLG.Business\bin\Release\BLG.Business.pdb
+C:\Development\MyFundi\BLG.Business\bin\Release\BLGWeather.Domain.dll
+C:\Development\MyFundi\BLG.Business\bin\Release\Newtonsoft.Json.dll
+C:\Development\MyFundi\BLG.Business\bin\Release\BLGWeather.Domain.pdb
+C:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.csproj.AssemblyReference.cache
+C:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.csproj.CoreCompileInputs.cache
+C:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.csproj.CopyComplete
+C:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.dll
+C:\Development\MyFundi\BLG.Business\obj\Release\BLG.Business.pdb

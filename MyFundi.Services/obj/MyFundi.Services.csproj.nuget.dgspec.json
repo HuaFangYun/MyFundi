@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj": {}
+    "C:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj": {}
   },
   "projects": {
-    "E:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj": {
+    "C:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj",
+        "projectUniqueName": "C:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj",
         "projectName": "MyFundi.AppConfigurations",
-        "projectPath": "E:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj",
+        "projectPath": "C:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj",
         "packagesPath": "C:\\Users\\mart4\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\MyFundi\\MyFundi.AppConfigurations\\obj\\",
+        "outputPath": "C:\\Development\\MyFundi\\MyFundi.AppConfigurations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -99,16 +99,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
       }
     },
-    "E:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj": {
+    "C:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj",
+        "projectUniqueName": "C:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj",
         "projectName": "MyFundi.DataAccess",
-        "projectPath": "E:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj",
+        "projectPath": "C:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj",
         "packagesPath": "C:\\Users\\mart4\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\MyFundi\\MyFundi.DataAccess\\obj\\",
+        "outputPath": "C:\\Development\\MyFundi\\MyFundi.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -132,8 +137,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj": {
-                "projectPath": "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj"
+              "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj": {
+                "projectPath": "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj"
               }
             }
           }
@@ -170,16 +175,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
       }
     },
-    "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj": {
+    "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj",
+        "projectUniqueName": "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj",
         "projectName": "MyFundi.Domain",
-        "projectPath": "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj",
+        "projectPath": "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj",
         "packagesPath": "C:\\Users\\mart4\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\MyFundi\\MyFundi.Domain\\obj\\",
+        "outputPath": "C:\\Development\\MyFundi\\MyFundi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -237,16 +247,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
       }
     },
-    "E:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj": {
+    "C:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj",
+        "projectUniqueName": "C:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj",
         "projectName": "MyFundi.Services",
-        "projectPath": "E:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj",
+        "projectPath": "C:\\Development\\MyFundi\\MyFundi.Services\\MyFundi.Services.csproj",
         "packagesPath": "C:\\Users\\mart4\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\MyFundi\\MyFundi.Services\\obj\\",
+        "outputPath": "C:\\Development\\MyFundi\\MyFundi.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -270,14 +285,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj": {
-                "projectPath": "E:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj"
+              "C:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj": {
+                "projectPath": "C:\\Development\\MyFundi\\MyFundi.AppConfigurations\\MyFundi.AppConfigurations.csproj"
               },
-              "E:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj": {
-                "projectPath": "E:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj"
+              "C:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj": {
+                "projectPath": "C:\\Development\\MyFundi\\MyFundi.DataAccess\\MyFundi.DataAccess.csproj"
               },
-              "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj": {
-                "projectPath": "E:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj"
+              "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj": {
+                "projectPath": "C:\\Development\\MyFundi\\MyFundi.Domain\\MyFundi.Domain.csproj"
               }
             }
           }
@@ -307,6 +322,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }
