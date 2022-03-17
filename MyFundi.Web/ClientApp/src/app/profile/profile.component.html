@@ -8,12 +8,12 @@
   <section id="Profile">
     <div class="row" style="text-align: center !important; align-content: center !important;">
       <div class="col-lg-12">
-        <img id="profileImage" src="/FundiProfile/GetFundiProfileImage?username={{userDetails.username}}" alt="profileImage" style="width:250px; height:auto; align-content:center !important;" />
+        <img id="profileImage" src="/FundiProfile/GetFundiProfileImage?username={{userDetails.username}}" alt="profileImage" style="width:250px; height:auto; align-content:center !important;" /><br/>
       </div>
     </div>
     <div class="row" style="text-align: center !important; align-content: center !important;">
       <div class="col-lg-12">
-        <a routerLink="/FundiProfile/GetFundiCV?username={{userDetails.username}}" routerLinkActive='link-active' style="color:blue !important;">Download {{userDetails.firstName}} {{userDetails.lastName}} Profile CV</a>
+        <a id="downloadCV" routerLinkActive='link-active' style="color:blue !important;">Download {{userDetails.firstName}} {{userDetails.lastName}} Profile CV</a>
       </div>
     </div>
     <div class="row">

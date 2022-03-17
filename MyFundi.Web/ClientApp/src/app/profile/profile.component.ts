@@ -15,7 +15,9 @@ export class ProfileComponent implements OnInit {
   workCategories: IWorkCategory[];
   certifications: ICertification[];
   courses: ICourse[];
-
+  decoderUrl(url: string):string {
+    return decodeURIComponent(url);
+  }
   ngOnInit(): void {
     this.userDetails = JSON.parse(localStorage.getItem("userDetails"));
     this.userRoles = JSON.parse(localStorage.getItem("userRoles"));
@@ -40,6 +42,10 @@ export class ProfileComponent implements OnInit {
     certsObs.map((certs: ICertification[]) => {
       this.certifications = certs;
     }).subscribe();
+
+    let downloadLink: HTMLAnchorElement = document.querySelector('a#downloadCV');
+    downloadLink.href = `/FundiProfile/GetFundiCV?username=${this.userDetails.username}`;
+
   }
   constructor(private myFundiService: MyFundiService) {
     this.userDetails = {};

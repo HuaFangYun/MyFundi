@@ -85,9 +85,9 @@ namespace MyFundi.Web.Controllers
         public async Task<IActionResult> GetFundiCV(string username)
         {
 
-            string contentPath = this.Environment.ContentRootPath;
+            string contentPath = this.Environment.ContentRootPath + "\\MyFundiProfile\\";
 
-            string fundiCVImagePath = contentPath + "\\MyFundiProfile\\ProfileCV_" + username;
+            string fundiCVImagePath = contentPath + "ProfileCV_" + username;
             DirectoryInfo dir = new DirectoryInfo(contentPath);
 
             if (dir.Exists)
@@ -101,6 +101,7 @@ namespace MyFundi.Web.Controllers
                         byte[] bytes = new byte[4096];
                         int bytesRead = 0;
                         Response.ContentType = $"application/{profInfo.Extension}";
+                        Response.Headers.Add("Content-Disposition", $"attachment; filename=\"{profInfo.Name}\"");
                         using (var wstr = Response.BodyWriter.AsStream())
                         {
                             while ((bytesRead = stream.Read(bytes, 0, bytes.Length)) > 0)

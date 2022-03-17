@@ -33,3 +33,9 @@ E:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.csproj.Co
 E:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.dll
 E:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.pdb
 E:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.csproj.AssemblyReference.cache
+C:\Development\MyFundi\BLGWeather.Domain\bin\Release\BLGWeather.Domain.dll
+C:\Development\MyFundi\BLGWeather.Domain\bin\Release\BLGWeather.Domain.pdb
+C:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.csproj.AssemblyReference.cache
+C:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.csproj.CoreCompileInputs.cache
+C:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.dll
+C:\Development\MyFundi\BLGWeather.Domain\obj\Release\BLGWeather.Domain.pdb
