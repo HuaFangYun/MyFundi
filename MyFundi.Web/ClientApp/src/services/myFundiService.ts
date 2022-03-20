@@ -8,7 +8,7 @@ import { APP_BASE_HREF } from '@angular/common';
 @Injectable()
 export class MyFundiService {
 
-  private baseServerUrl: string = /*"https://localhost:44394";*/ "https://myfundi.martinlayooinc.com";
+  private baseServerUrl: string = "https://localhost:44394"; /*"https://myfundi.martinlayooinc.com";*/
   public static isLoginPage: boolean = false;
   public actionResult: any;
   public httpClient: HttpClient;
