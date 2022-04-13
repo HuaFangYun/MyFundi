@@ -5,7 +5,9 @@
     <h1 style="padding-bottom:5px !important;"><a href="index.html" style="padding-bottom:5px !important;" id="logo">My Fundi Web <em>by MartinLayooInc &copy;</em></a></h1>
   </div>
   <!-- Banner -->
-  <app-nav-menu [(ngModel)]="actUserStatus" ngDefaultControl></app-nav-menu>
+  <div id="mainmenucontent">
+    <app-nav-menu [(ngModel)]="actUserStatus" ngDefaultControl></app-nav-menu>
+  </div>
   <!-- Highlights -->
   <section>
     <div style="margin-top:15px !important; text-align:center !important;" class="container">
@@ -20,7 +22,7 @@
     </div>
   </section>
   <section>
-    <div class="container">
+    <div class="container" id="mainbodycontent">
       <router-outlet></router-outlet>
       <ng-container *ngIf="presentLearnMore" ngModel="presentLearnMore" ngDefaultControl>
         <div style="margin: 20px 0px;">
@@ -31,6 +33,9 @@
       </ng-container>
     </div>
   </section>
+  <div style="text-align:center !important;">
+    <input id="mobilemenu" type="button" class="btn" style="background-color:slateblue !important;color:white !important;font-weight:bolder !important;width:400px !important; padding:5px !important;" value="Mobile Menu" />
+  </div>
   <div id="twitterProfileFeeds">
     <twitter-profile-feeds></twitter-profile-feeds>
   </div>

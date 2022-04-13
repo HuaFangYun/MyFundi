@@ -2,6 +2,7 @@ import { Component, Input, OnInit} from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import 'rxjs/add/operator/filter';
 import { IUserStatus, MyFundiService } from '../services/myFundiService';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,18 @@ export class AppComponent implements OnInit{
   }
   ngOnInit(){
     this.actUserStatus = MyFundiService.actUserStatus;
+
+    $('#mobilemenu').click(function () {
+      document.getElementById('mainmenucontent').scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+
+    $('#mainmenucontent').click(function () {
+      document.getElementById('mainbodycontent').scrollIntoView({
+        behavior: "smooth"
+      });
+    });
   }
   private isPresentLearnMore(url:string): boolean {
     this.presentLearnMore = false;
