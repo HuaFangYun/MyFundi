@@ -17,4 +17,3 @@ C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalcul
 C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.csproj.CoreCompileInputs.cache
 C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.dll
 C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.pdb
-C:\Development\MyFundi\PaymentCalculater\obj\Release\netcoreapp3.1\PaymentCalculater.csproj.AssemblyReference.cache

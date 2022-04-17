@@ -8,7 +8,7 @@ import * as $ from 'jquery';
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent implements OnInit, AfterContentInit{
+export class AppComponent implements OnInit{
   public title = 'app';
    presentLearnMore: boolean;
    actUserStatus: IUserStatus;
@@ -20,10 +20,9 @@ export class AppComponent implements OnInit, AfterContentInit{
         // You only receive NavigationEnd events
         this.presentLearnMore = this.isPresentLearnMore(event.url);
       });
-
   }
+
   ngOnInit() {
-    window.addEventListener('resize', this.adaptResizeWindowsMenus, true);
 
     this.actUserStatus = MyFundiService.actUserStatus;
 
@@ -38,21 +37,19 @@ export class AppComponent implements OnInit, AfterContentInit{
         behavior: "smooth"
       });
     });
+
+    //window.addEventListener('resize', this.adaptResizeWindowsMenus, true);
   }
-  ngAfterContentInit() {
-    window.addEventListener('resize', this.adaptResizeWindowsMenus, true);
-  }
-  adaptResizeWindowsMenus() {
-    if (window.matchMedia("(max-width: 769px)").matches) {
-      // The viewport is less than 768 pixels wide
-      //alert("This is a mobile device.");
-      $('input#mobilemenu').css('display', 'block !important');
+/*  adaptResizeWindowsMenus() {
+
+    if (window.matchMedia("(max-width: 640px)").matches) {
+
+      $('div#linkToMainMenu').css('display', 'block');
     } else {
-      // The viewport is at least 768 pixels wide
-      //alert("This is a tablet or desktop.");=
-      $('input#mobilemenu').css('display', 'none');
+
+      $('div#linkToMainMenu').css('display', 'none');
     }
-  }
+  }*/
   private isPresentLearnMore(url:string): boolean {
     this.presentLearnMore = false;
     if (url.toLowerCase().indexOf('/login') > -1 ||
