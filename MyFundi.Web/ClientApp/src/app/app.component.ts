@@ -1,4 +1,4 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { AfterContentInit, Component, Input, OnInit} from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import 'rxjs/add/operator/filter';
 import { IUserStatus, MyFundiService } from '../services/myFundiService';
@@ -8,7 +8,7 @@ import * as $ from 'jquery';
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit, AfterContentInit{
   public title = 'app';
    presentLearnMore: boolean;
    actUserStatus: IUserStatus;
@@ -22,10 +22,12 @@ export class AppComponent implements OnInit{
       });
 
   }
-  ngOnInit(){
+  ngOnInit() {
+    window.addEventListener('resize', this.adaptResizeWindowsMenus, true);
+
     this.actUserStatus = MyFundiService.actUserStatus;
 
-    $('#mobilemenu').click(function () {
+    $('input#mobilemenu').click(function () {
       document.getElementById('mainmenucontent').scrollIntoView({
         behavior: "smooth"
       });
@@ -36,6 +38,20 @@ export class AppComponent implements OnInit{
         behavior: "smooth"
       });
     });
+  }
+  ngAfterContentInit() {
+    window.addEventListener('resize', this.adaptResizeWindowsMenus, true);
+  }
+  adaptResizeWindowsMenus() {
+    if (window.matchMedia("(max-width: 769px)").matches) {
+      // The viewport is less than 768 pixels wide
+      //alert("This is a mobile device.");
+      $('input#mobilemenu').css('display', 'block !important');
+    } else {
+      // The viewport is at least 768 pixels wide
+      //alert("This is a tablet or desktop.");=
+      $('input#mobilemenu').css('display', 'none');
+    }
   }
   private isPresentLearnMore(url:string): boolean {
     this.presentLearnMore = false;
