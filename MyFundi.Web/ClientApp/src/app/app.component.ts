@@ -20,6 +20,8 @@ export class AppComponent implements OnInit{
         // You only receive NavigationEnd events
         this.presentLearnMore = this.isPresentLearnMore(event.url);
       });
+      
+    setInterval(this.adaptResizeWindowsMenus, 500);
   }
 
   ngOnInit() {
@@ -38,18 +40,17 @@ export class AppComponent implements OnInit{
       });
     });
 
-    //window.addEventListener('resize', this.adaptResizeWindowsMenus, true);
   }
-/*  adaptResizeWindowsMenus() {
+  adaptResizeWindowsMenus() {
 
-    if (window.matchMedia("(max-width: 640px)").matches) {
+    if (window.matchMedia("(max-width: 512px)").matches) {
 
       $('div#linkToMainMenu').css('display', 'block');
     } else {
 
       $('div#linkToMainMenu').css('display', 'none');
     }
-  }*/
+  }
   private isPresentLearnMore(url:string): boolean {
     this.presentLearnMore = false;
     if (url.toLowerCase().indexOf('/login') > -1 ||
