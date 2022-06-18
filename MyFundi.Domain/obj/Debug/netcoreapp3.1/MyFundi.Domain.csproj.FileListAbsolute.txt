@@ -11,10 +11,10 @@ E:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.pdb
 C:\Development\MyFundi\MyFundi.Domain\bin\Debug\netcoreapp3.1\MyFundi.Domain.deps.json
 C:\Development\MyFundi\MyFundi.Domain\bin\Debug\netcoreapp3.1\MyFundi.Domain.dll
 C:\Development\MyFundi\MyFundi.Domain\bin\Debug\netcoreapp3.1\MyFundi.Domain.pdb
-C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.csproj.AssemblyReference.cache
 C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.AssemblyInfoInputs.cache
 C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.AssemblyInfo.cs
 C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.csproj.CoreCompileInputs.cache
 C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.dll
 C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.pdb
+C:\Development\MyFundi\MyFundi.Domain\obj\Debug\netcoreapp3.1\MyFundi.Domain.csproj.AssemblyReference.cache

@@ -50,6 +50,11 @@
         </ng-container>
         <ng-container *ngIf="actUserStatus.isUserLoggedIn" ngModel="actUserStatus" ngDefaultControl>
           <li style="margin: 10px 0px !important; padding: 10px !important;">
+            <a [routerLink]="['/clientsearch']">
+              Search For Fundi
+            </a>
+          </li>
+          <li style="margin: 10px 0px !important; padding: 10px !important;">
             <a [routerLink]="['/scanqrcode']">
               Scan Qr-Code
             </a>

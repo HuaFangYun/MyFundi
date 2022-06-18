@@ -46,6 +46,8 @@ import { ProfileCreateComponent } from './profile-create/profilecreate.component
 import { CourseCrudComponent } from './crud-operations/coursescrud/coursescrud.component';
 import { CertificationCrudComponent } from './crud-operations/certificationcrud/certificationcrud.component';
 import { WorkCategoryCrudComponent } from './crud-operations/workcategorycrud/workcategorycrud.component';
+import { ClientFundiSearchComponent } from './clientFundiSearch/clientFundiSearch.component';
+import { FundiProfileByIdComponent } from './fundiProfile-by-id/fundiProfileById.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +87,9 @@ import { WorkCategoryCrudComponent } from './crud-operations/workcategorycrud/wo
     WorkCategoryComponent,
     CourseCrudComponent,
     CertificationCrudComponent,
-    WorkCategoryCrudComponent
+    WorkCategoryCrudComponent,
+    ClientFundiSearchComponent,
+    FundiProfileByIdComponent
 
 
   ],
@@ -115,7 +119,10 @@ import { WorkCategoryCrudComponent } from './crud-operations/workcategorycrud/wo
       { path: 'Administrator', component: AdministratorRoleComponent, canActivate: [AdminAuthGuard] },
       { path: 'Guest', component: GuestRoleComponent, canActivate: [AuthGuard] },
       { path: 'Fundi', component: FundiRoleComponent, canActivate: [AuthFundiGuard] },
-      { path: 'Client', component: ClientRoleComponent, canActivate: [AuthClientGuard] }
+      { path: 'Client', component: ClientRoleComponent, canActivate: [AuthClientGuard] },
+      { path: 'clientsearch', component: ClientFundiSearchComponent, canActivate: [AuthGuard] },
+      { path: 'fundiprofile-by-id', component: FundiProfileByIdComponent, canActivate: [AuthGuard] }
+
     ])
   ],
   providers: [{ provide: AdminAuthGuard, useClass: AdminAuthGuard },

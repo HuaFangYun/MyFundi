@@ -15,5 +15,7 @@ namespace MyFundi.Domain
         public int TransportScheduleId { get; set; }
         [ForeignKey("Invoice")]
         public int InvoiceId { get; set; }
+        public DateTime DateCreated { get; set; } = DateTime.Now;
+        public DateTime DateUpdated { get; set; } = DateTime.Now;
     }
 }

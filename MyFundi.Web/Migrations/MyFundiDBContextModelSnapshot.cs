@@ -271,9 +271,9 @@ namespace MyFundi.Web.Migrations
                     b.ToTable("FundiProfileCourses");
                 });
 
-            modelBuilder.Entity("MyFundi.Domain.FundiProfileFundiRating", b =>
+            modelBuilder.Entity("MyFundi.Domain.FundiRatingAndReview", b =>
                 {
-                    b.Property<int>("FundiProfileFundiRatingId")
+                    b.Property<int>("FundiRatingAndReviewId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -284,46 +284,25 @@ namespace MyFundi.Web.Migrations
                     b.Property<DateTime>("DateUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("FundiProfileiId")
+                    b.Property<int>("FundiProfileId")
                         .HasColumnType("int");
-
-                    b.Property<int>("FundiRatingId")
-                        .HasColumnType("int");
-
-                    b.HasKey("FundiProfileFundiRatingId");
-
-                    b.HasIndex("FundiProfileiId");
-
-                    b.HasIndex("FundiRatingId");
-
-                    b.ToTable("FundiProfileFundiRatings");
-                });
-
-            modelBuilder.Entity("MyFundi.Domain.FundiRating", b =>
-                {
-                    b.Property<int>("FundiRatingId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("DateCreated")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateUpdated")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("FundiRatingDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FundiRatingSummary")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.HasKey("FundiRatingId");
+                    b.Property<string>("Review")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("FundiRatings");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("FundiRatingAndReviewId");
+
+                    b.HasIndex("FundiProfileId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("FundiProfileAndReviewRatings");
                 });
 
             modelBuilder.Entity("MyFundi.Domain.FundiWorkCategory", b =>
@@ -477,6 +456,12 @@ namespace MyFundi.Web.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateUpdated")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("InvoiceId")
                         .HasColumnType("int");
@@ -665,17 +650,17 @@ namespace MyFundi.Web.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MyFundi.Domain.FundiProfileFundiRating", b =>
+            modelBuilder.Entity("MyFundi.Domain.FundiRatingAndReview", b =>
                 {
                     b.HasOne("MyFundi.Domain.FundiProfile", "FundiProfile")
                         .WithMany()
-                        .HasForeignKey("FundiProfileiId")
+                        .HasForeignKey("FundiProfileId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyFundi.Domain.FundiRating", "FundiRating")
+                    b.HasOne("MyFundi.Domain.User", "User")
                         .WithMany()
-                        .HasForeignKey("FundiRatingId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -241,14 +241,16 @@ namespace MyFundi.Web
                 conf.CreateMap<FundiProfileCertificationViewModel, FundiProfileCertification>().ReverseMap();
                 conf.CreateMap<FundiProfileCourseTakenViewModel, FundiProfileCourseTaken>();
                 conf.CreateMap<FundiProfileCourseTakenViewModel, FundiProfileCourseTaken>().ReverseMap();
-                conf.CreateMap<FundiProfileFundiRatingViewModel, FundiProfileFundiRating>();
-                conf.CreateMap<FundiProfileFundiRatingViewModel, FundiProfileFundiRating>().ReverseMap();
-                conf.CreateMap<FundiRatingViewModel, FundiRating>();
-                conf.CreateMap<FundiRatingViewModel, FundiRating>().ReverseMap();
+                conf.CreateMap<FundiRatingAndReviewViewModel, FundiRatingAndReview>();
+                conf.CreateMap<FundiRatingAndReviewViewModel, FundiRatingAndReview>().ReverseMap();
+                conf.CreateMap<FundiRatingAndReviewViewModel, FundiRatingAndReview>();
+                conf.CreateMap<FundiRatingAndReviewViewModel, FundiRatingAndReview>().ReverseMap();
                 conf.CreateMap<FundiWorkCategoryViewModel, FundiWorkCategory>();
                 conf.CreateMap<FundiWorkCategoryViewModel, FundiWorkCategory>().ReverseMap();
                 conf.CreateMap<WorkCategoryViewModel, WorkCategory>();
                 conf.CreateMap<WorkCategoryViewModel, WorkCategory>().ReverseMap();
+                conf.CreateMap<UserViewModel, User>();
+                conf.CreateMap<UserViewModel, User>().ReverseMap(); 
             });
 
             var httpClient = new BGLHttpClient();
@@ -278,8 +280,7 @@ namespace MyFundi.Web
             services.AddScoped<AbstractRepository<FundiProfile>, FundiProfileRepository>();
             services.AddScoped<AbstractRepository<FundiProfileCertification>, FundiProfileCertificationRepository>();
             services.AddScoped<AbstractRepository<FundiProfileCourseTaken>, FundiProfileCourseTakenRepository>();
-            services.AddScoped<AbstractRepository<FundiProfileFundiRating>, FundiProfileFundiRatingRepository>();
-            services.AddScoped<AbstractRepository<FundiRating>, FundiRatingRepository>();
+            services.AddScoped<AbstractRepository<FundiRatingAndReview>, FundiRatingsAndReviewRepository>();
             services.AddScoped<AbstractRepository<FundiWorkCategory>, FundiWorkCategoryRepository>();
             services.AddScoped<AbstractRepository<WorkCategory>, WorkCategoryRepository>();
             services.AddScoped<ServicesEndPoint, ServicesEndPoint>();

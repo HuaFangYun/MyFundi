@@ -1,31 +1,24 @@
-﻿using System;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using MyFundi.AppConfigurations;
+using MyFundi.Domain;
+using MyFundi.ServiceEndPoint.GeneralSevices;
+using MyFundi.Services.EmailServices.Interfaces;
+using MyFundi.UnitOfWork.Concretes;
+using MyFundi.Web.IdentityServices;
+using MyFundi.Web.ViewModels;
+using PaymentGateway;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using MyFundi.ServiceEndPoint.GeneralSevices;
-using MyFundi.UnitOfWork.Concretes;
-using MyFundi.UnitOfWork.Interfaces;
-using MyFundi.AppConfigurations;
-using MyFundi.Domain;
-using MyFundi.Services.EmailServices.Interfaces;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
-using QRCoder;
-using MyFundi.Web.ViewModels;
-using PaymentGateway;
-using PaypalFacility;
-using AutoMapper;
-using Microsoft.AspNetCore.Http;
-using MyFundi.Services.EmailServices;
-using MyFundi.Web.IdentityServices;
-using System.Text;
-using System.Reflection;
-using Microsoft.AspNetCore.Hosting;
 
 namespace MyFundi.Web.Controllers
 {
@@ -77,6 +70,77 @@ namespace MyFundi.Web.Controllers
                 }
             }
             return await Task.FromResult(Ok(new { Message = "Profile Image downloaded Successfully" }));
+
+            //Bitmap profileImage = new Bitmap(Bitmap.FromFile(fundiProfileImagePath));
+
+            //return  File(BitmapToBytes(profileImage), "image/jpg");
+        }
+        public async Task<IActionResult> GetFundiProfileImage(int fundiProfileId)
+        {
+
+            string contentPath = this.Environment.ContentRootPath;
+            var fundiProfile =_unitOfWork._fundiProfileRepository.GetById(fundiProfileId);
+            var username = _unitOfWork._userRepository.GetByGuid(fundiProfile.UserId);
+
+            string fundiProfileImagePath = contentPath + "\\MyFundiProfile\\ProfileImage_" + username + ".jpg";
+
+            var profInfo = new FileInfo(fundiProfileImagePath);
+            using (var stream = profInfo.OpenRead())
+            {
+                byte[] bytes = new byte[4096];
+                int bytesRead = 0;
+                Response.ContentType = "image/jpg";
+                using (var wstr = Response.BodyWriter.AsStream())
+                {
+                    while ((bytesRead = stream.Read(bytes, 0, bytes.Length)) > 0)
+                    {
+                        wstr.Write(bytes, 0, bytesRead);
+                    }
+                    wstr.Flush();
+                    wstr.Close();
+                }
+            }
+            return await Task.FromResult(Ok(new { Message = "Profile Image downloaded Successfully" }));
+
+            //Bitmap profileImage = new Bitmap(Bitmap.FromFile(fundiProfileImagePath));
+
+            //return  File(BitmapToBytes(profileImage), "image/jpg");
+        }
+
+        public async Task<IActionResult> GetFundiCV(int fundiProfileId)
+        {
+
+            string contentPath = this.Environment.ContentRootPath + "\\MyFundiProfile\\";
+            var userId = _unitOfWork._fundiProfileRepository.GetById(fundiProfileId).UserId;
+            string fundiCVImagePath = contentPath + "ProfileCV_" +_unitOfWork._userRepository.GetByGuid(userId);
+            DirectoryInfo dir = new DirectoryInfo(contentPath);
+
+            if (dir.Exists)
+            {
+                var profInfo = dir.GetFiles().FirstOrDefault(f => f.FullName.ToLower().Contains(fundiCVImagePath.ToLower()));
+
+                if (profInfo.Exists)
+                {
+                    using (var stream = profInfo.OpenRead())
+                    {
+                        byte[] bytes = new byte[4096];
+                        int bytesRead = 0;
+                        Response.ContentType = $"application/{profInfo.Extension}";
+                        Response.Headers.Add("Content-Disposition", $"attachment; filename=\"{profInfo.Name}\"");
+                        using (var wstr = Response.BodyWriter.AsStream())
+                        {
+                            while ((bytesRead = stream.Read(bytes, 0, bytes.Length)) > 0)
+                            {
+                                wstr.Write(bytes, 0, bytesRead);
+                            }
+                            wstr.Flush();
+                            wstr.Close();
+                        }
+                    }
+                    return await Task.FromResult(Ok(new { Message = "Profile CV downloaded Successfully" }));
+                }
+            }
+            return await Task.FromResult(NotFound(new { Message = "CV does not exist" }));
 
             //Bitmap profileImage = new Bitmap(Bitmap.FromFile(fundiProfileImagePath));
 
@@ -190,7 +254,18 @@ namespace MyFundi.Web.Controllers
 
             return await Task.FromResult(Ok(new { Message = "Fundi Courses updated" }));
         }
+        [Route("~/FundiProfile/GetFundiUserByProfileId/{profileId}")]
+        public async Task<IActionResult> GetFundiUserByProfileId(int profileId)
+        {
+            var fundiProfile = _unitOfWork._fundiProfileRepository.GetById(profileId);
+            var user = _unitOfWork._userRepository.GetByGuid(fundiProfile.UserId);
 
+            if (user == null || fundiProfile == null)
+            {
+                return await Task.FromResult(NotFound(new { Message = "User not found" }));
+            }
+            return await Task.FromResult(Ok(_mapper.Map<UserViewModel>(user)));
+        }
         public async Task<IActionResult> GetFundiProfile(string username)
         {
             User user = _serviceEndPoint.GetUserByEmailAddress(username);
@@ -206,21 +281,69 @@ namespace MyFundi.Web.Controllers
         public async Task<IActionResult> GetFundiRatings(string username)
         {
             User user = _serviceEndPoint.GetUserByEmailAddress(username);
-            var fundiProfile = _unitOfWork._fundiProfileRepository.GetAll().FirstOrDefault(q => q.UserId.ToString().ToLower().Equals(user.UserId.ToString().ToLower()));
+            var fundiProfileRatings = _unitOfWork._fundiRatingsAndReviewRepository.GetAll().Where(q => q.UserId.ToString().ToLower().Equals(user.UserId.ToString().ToLower()));
 
-            if (user == null || fundiProfile == null)
+            if (user == null || !fundiProfileRatings.Any())
             {
                 return await Task.FromResult(NotFound(new { Message = $"user {username} profile not Found!" }));
             }
 
-            var fundiRating = from fr in _unitOfWork._fundiRatingRepository.GetAll()
-                              join fpr in _unitOfWork._fundiProfileFundiRatingRepository.GetAll()
-                              on fr.FundiRatingId equals fpr.FundiRatingId
-                              join fp in _unitOfWork._fundiProfileRepository.GetAll().Where(q => q.FundiProfileId == fundiProfile.FundiProfileId)
-                              on fpr.FundiProfileiId equals fp.FundiProfileId
-                              select fr;
-            return await Task.FromResult(Ok(_mapper.Map<FundiRatingViewModel[]>(fundiRating.ToArray())));
+            return await Task.FromResult(Ok(_mapper.Map<FundiRatingAndReviewViewModel[]>(fundiProfileRatings.ToArray())));
         }
+
+        
+        [AuthorizeIdentity]
+        [HttpPost]
+        public async Task<IActionResult> PostAllFundiRatingsAndReviewsByCategories([FromBody] CategoriesViewModel categoriesViewModel)
+        {
+            var reviewCateg = from fwcat in _unitOfWork._fundiWorkCategoryRepository.GetAll()
+                              join fp in _unitOfWork._fundiProfileRepository.GetAll()
+                              on fwcat.FundiProfileId equals fp.FundiProfileId
+                              join us in _unitOfWork._userRepository.GetAll()
+                              on fp.UserId equals us.UserId
+                              join frR in _unitOfWork._fundiRatingsAndReviewRepository.GetAll()
+                              on fp.FundiProfileId equals frR.FundiProfileId into catFp
+                              from j in catFp.DefaultIfEmpty()
+                              where categoriesViewModel.Categories.Contains(fwcat.WorkCategory.WorkCategoryType)
+                              select new FundiRatingAndReviewViewModel
+                              {
+                                  FundiRatingAndReviewId = j.FundiRatingAndReviewId,
+                                  FundiProfileId = fp.FundiProfileId,
+                                  Rating = j.Rating,
+                                  Review = j.Review,
+                                  FundiProfile = _mapper.Map<FundiProfileViewModel>(fp),
+                                  UserId= us.UserId,
+                                  DateUpdated = j.DateUpdated,
+                                  WorkCategoryType = fwcat.WorkCategory.WorkCategoryType
+                              };
+            if(reviewCateg.Any())
+            {
+                var fundiGroupedRatings = new Dictionary<string, List<FundiRatingAndReviewViewModel>>();
+                foreach(var rat in reviewCateg)
+                {
+                    if (!fundiGroupedRatings.Keys.Contains(rat.FundiProfileId.ToString().ToLower()))
+                    {
+                        var list = new List<FundiRatingAndReviewViewModel>();
+                        list.Add(rat);
+                        fundiGroupedRatings.Add(rat.FundiProfileId.ToString().ToLower(), list);                        
+                    }
+                    else
+                    {
+                       var list = fundiGroupedRatings[rat.FundiProfileId.ToString().ToLower()];
+                       list.Add(rat);
+                    }
+
+                }
+                return await Task.FromResult(Ok(fundiGroupedRatings));
+                /*  return await Task.FromResult(Ok(Newtonsoft.Json.JsonConvert.SerializeObject(fundiGroupedRatings, Formatting.Indented, new JsonSerializerSettings
+                  {
+                      TypeNameHandling = TypeNameHandling.All,
+                      TypeNameAssemblyFormat = FormatterAssemblyStyle.Simple
+                  })));*/
+            }
+            return await Task.FromResult(NotFound(new { Message = "No Reviews & Ratings for Fundi" }));
+        }
+
         [AuthorizeIdentity]
         public async Task<IActionResult> GetFundiCertifications(string username)
         {
@@ -265,6 +388,19 @@ namespace MyFundi.Web.Controllers
                                     on fcr.FundiProfileId equals fp.FundiProfileId
                                     select c;
             return await Task.FromResult(Ok(_mapper.Map<CourseViewModel[]>(fundiCoursesTaken.ToArray())));
+        }
+        
+        [AuthorizeIdentity]
+        public async Task<IActionResult> GetWorkCategories()
+        {
+            var workCategories = _unitOfWork._workCategoryRepository.GetAll();
+
+
+            if (workCategories.Any())
+            {
+                return await Task.FromResult(Ok(_mapper.Map<WorkCategoryViewModel[]>(workCategories.ToArray())));
+            }
+            return await Task.FromResult(NotFound(new { Message = "No Work Categories exist!" }));
         }
         [AuthorizeIdentity]
         public async Task<IActionResult> GetFundiWorkCategories(string username)

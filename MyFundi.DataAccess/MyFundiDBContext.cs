@@ -40,8 +40,7 @@ namespace MyFundi.DataAccess
         public DbSet<FundiProfileCertification> FundiProfileCertifications { get; set; }
         public DbSet<WorkCategory> WorkCategories { get; set; }
         public DbSet<FundiWorkCategory> FundiWorkCategories { get; set; }
-        public DbSet<FundiProfileFundiRating> FundiProfileFundiRatings { get; set; }
-        public DbSet<FundiRating> FundiRatings { get; set; }
+        public DbSet<FundiRatingAndReview> FundiProfileAndReviewRatings { get; set; }
         public DbSet<ClientFundiContract> ClientFundiContracts { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<Item> Items { get; set; }

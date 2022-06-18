@@ -6,16 +6,18 @@ using System.Text;
 
 namespace MyFundi.Domain
 {
-    public class FundiProfileFundiRating
+    public class FundiRatingAndReview   
     {
         [Key]
-        public int FundiProfileFundiRatingId { get; set; }
+        public int FundiRatingAndReviewId { get; set; }
+        [ForeignKey("User")]
+        public Guid UserId { get; set; }
+        public User User { get; set; }
+        public int Rating { get; set; }
+        public string Review { get; set; }
         [ForeignKey("FundiProfile")]
-        public int FundiProfileiId { get; set; }
+        public int FundiProfileId { get; set; }
         public FundiProfile FundiProfile { get; set; }
-        [ForeignKey("FundiRating")]
-        public int FundiRatingId { get; set; }
-        public FundiRating FundiRating { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
         public DateTime DateUpdated { get; set; } = DateTime.Now;
     }

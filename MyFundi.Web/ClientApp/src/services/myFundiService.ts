@@ -34,10 +34,12 @@ export class MyFundiService {
   public getFundiWorkCategoriesUrl: string = this.baseServerUrl + "/FundiProfile/GetFundiWorkCategories";
   public getFundiCertificationsUrl: string = this.baseServerUrl + "/FundiProfile/GetFundiCertifications";
   public getAllFundiWorkCategoriesUrl: string = this.baseServerUrl + "/FundiProfile/GetAllFundiWorkCategories";
-  public getAllFundiCertificatesUrl: string = this.baseServerUrl + "/FundiProfile/GetAllFundiCertificates"; 
-  
+  public getAllFundiCertificatesUrl: string = this.baseServerUrl + "/FundiProfile/GetAllFundiCertificates";
+
+  public postAllFundiRatingsAndReviewsByCategoriesUrl: string = this.baseServerUrl + "/FundiProfile/PostAllFundiRatingsAndReviewsByCategories";
   public updateFundiProfileUrl: string = this.baseServerUrl + "/FundiProfile/UpdateFundiProfile";
   public getFundiProfileUrl: string = this.baseServerUrl + "/FundiProfile/GetFundiProfile";
+  public getFundiUserByProfileIdUrl: string = this.baseServerUrl + "/FundiProfile/GetFundiUserByProfileId";
   public getAllFundiCoursesUrl: string = this.baseServerUrl + "/FundiProfile/GetAllFundiCourses";
   public getUserInvoicedItems: string = this.baseServerUrl + "/Home/GetUserInvoicedItems";
   public createRoleUrl: string = this.baseServerUrl + "/Account/CreateRole";
@@ -122,6 +124,23 @@ export class MyFundiService {
       return roles;
     });
   }
+
+  GetFundiUserByProfileId(profileId: number) {
+    const headers = new HttpHeaders({ 'content-type': 'application/json' });
+    let requestUrl = this.getFundiUserByProfileIdUrl+"/"+profileId;
+    let requestOptions: any = {
+      url: requestUrl,
+      method: 'GET',
+      headers: headers,
+      responseType: 'application/json'
+    };
+
+    return this.httpClient.get(requestOptions.url, requestOptions.headers).map((res: any): object[] => {
+      let courses: object[] = res;
+      return courses;
+    });
+  }
+
   public GetAllCourses(): Observable<any> {
 
     const headers = new HttpHeaders({ 'content-type': 'application/json' });
@@ -618,6 +637,26 @@ export class MyFundiService {
       return res;
     });
   }
+  GetFundiRatingsAndReviews(categories: string[]): Observable<any> {
+    const headers = new HttpHeaders({ 'content-type': 'application/json' });
+
+    let body: string = JSON.stringify({ categories: categories });
+
+    let requestUrl = this.postAllFundiRatingsAndReviewsByCategoriesUrl;
+    let requestOptions: any = {
+      url: requestUrl,
+      method: 'POST',
+      headers: headers,
+      body:body,
+      responseType: 'application/json'
+    };
+
+    return this.httpClient.post(requestOptions.url, body, { 'headers': requestOptions.headers }).map((res: any) => {
+      
+      return res;
+    });
+  }
+
   public GetLocationById(locationId: number): Observable<ILocation> {
     const headers = new HttpHeaders({ 'content-type': 'application/json' });
     let requestUrl = this.getLocationByIdUrl + "/" + locationId;
@@ -1107,14 +1146,19 @@ export interface IProfile {
 }
 
 export interface IFundiRating {
-  fundiRatingId: number;
-  fundiRatingDescription: string;
-  fundiRatingSummary: string;
+  fundiRatingAndReviewId: number;
+  userId: string;
+  fundiProfileId: number;
+  fundiProfile: any;
   rating: number;
-  usedPowerTools: string;
-  fundiProfileCvUrl: string;
+  review: string;
+  dateUpdated: Date;
 }
 
+export interface IFundiRatingDictionary {
+  fundiProfileId: number,
+  fundiRating: IFundiRating[]
+}
 export interface IWorkCategory {
   workCategoryId: number;
   workCategoryType: string;

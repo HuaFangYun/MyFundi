@@ -21,9 +21,12 @@
         <h5>Profile Rating</h5>
         <ul>
           <li *ngFor="let fundiRating of fundiRatings">
-            <h5>
+            <div>
               {{fundiRating.rating}} out of 5
-            </h5>
+            </div>
+            <div>
+              {{fundiRating.review}}
+            </div>
           </li>
         </ul>
       </div>

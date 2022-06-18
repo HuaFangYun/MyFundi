@@ -1,10 +1,8 @@
 ﻿using MyFundi.DataAccess;
 using MyFundi.Domain;
 using MyFundi.UnitOfWork.Interfaces;
-using MyFundi.Domain;
 using MyFundi.Services.RepositoryServices.Concretes;
 using MyFundi.Services.RepositoryServices.Abstracts;
-using MyFundi.Services.RepositoryServices.Concretes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,9 +27,8 @@ namespace MyFundi.UnitOfWork.Concretes
         public CourseRepository _courseRepository;
         public FundiProfileCertificationRepository _fundiProfileCertificationRepostiory;
         public FundiProfileCourseTakenRepository _fundiProfileCourseTakenRepository;
-        public FundiProfileFundiRatingRepository _fundiProfileFundiRatingRepository;
         public FundiProfileRepository _fundiProfileRepository;
-        public FundiRatingRepository _fundiRatingRepository;
+        public FundiRatingsAndReviewRepository _fundiRatingsAndReviewRepository;
         public FundiWorkCategoryRepository _fundiWorkCategoryRepository;
         public WorkCategoryRepository _workCategoryRepository;
         public MyFundiDBContext MyFundiDBContext { get; set; }
@@ -50,8 +47,7 @@ namespace MyFundi.UnitOfWork.Concretes
             AbstractRepository<FundiProfileCertification> fundiProfileCertificationRepository,
             AbstractRepository<FundiProfileCourseTaken> fundiProfileCourseTakenRepository,
             AbstractRepository<FundiProfile> fundiProfileRepository,
-            AbstractRepository<FundiProfileFundiRating> fundiProfileFundiRatingRepository,
-            AbstractRepository<FundiRating> fundiRatingRepository,
+            AbstractRepository<FundiRatingAndReview> fundiRatingsAndReviewRepository,
             AbstractRepository<FundiWorkCategory> fundiWorkCategoryRepository,
             AbstractRepository<WorkCategory> workCategoryRepository,
             MyFundiDBContext myFundiDbContext)
@@ -86,10 +82,8 @@ namespace MyFundi.UnitOfWork.Concretes
             _fundiProfileCourseTakenRepository.MyFundiDBContext = myFundiDbContext;
             _fundiProfileRepository = fundiProfileRepository as FundiProfileRepository;
             _fundiProfileRepository.MyFundiDBContext = myFundiDbContext;
-            _fundiProfileFundiRatingRepository = fundiProfileFundiRatingRepository as FundiProfileFundiRatingRepository;
-            _fundiProfileFundiRatingRepository.MyFundiDBContext = myFundiDbContext;
-            _fundiRatingRepository = fundiRatingRepository as FundiRatingRepository;
-            _fundiRatingRepository.MyFundiDBContext = myFundiDbContext;
+            _fundiRatingsAndReviewRepository = fundiRatingsAndReviewRepository as FundiRatingsAndReviewRepository;
+            _fundiRatingsAndReviewRepository.MyFundiDBContext = myFundiDbContext;
             _fundiWorkCategoryRepository = fundiWorkCategoryRepository as FundiWorkCategoryRepository;
             _fundiWorkCategoryRepository.MyFundiDBContext = myFundiDbContext;
             _workCategoryRepository = workCategoryRepository as WorkCategoryRepository;

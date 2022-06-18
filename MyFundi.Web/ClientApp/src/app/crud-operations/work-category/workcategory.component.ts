@@ -17,7 +17,7 @@ export class WorkCategoryComponent implements OnInit {
     this.userRoles = JSON.parse(localStorage.getItem("userRoles"));
     let workCategoriesObs = this.myFundiService.GetAllFundiWorkCategories();
 
-    this.selectCategory = document.querySelector('select#slworkCategoryId');
+    this.selectCategory = document.querySelector('#allWorkCategoryForm select#slworkCategoryId');
 
     workCategoriesObs.map((res: IWorkCategory[]) =>
     {

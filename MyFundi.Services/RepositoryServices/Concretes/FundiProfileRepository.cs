@@ -2,8 +2,8 @@
 using MyFundi.Services.RepositoryServices.Abstracts;
 using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using System.Text;
 
 namespace MyFundi.Services.RepositoryServices.Concretes
 {
