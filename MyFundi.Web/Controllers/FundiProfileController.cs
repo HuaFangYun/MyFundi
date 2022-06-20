@@ -280,10 +280,11 @@ namespace MyFundi.Web.Controllers
         [AuthorizeIdentity]
         public async Task<IActionResult> GetFundiRatings(string username)
         {
-            User user = _serviceEndPoint.GetUserByEmailAddress(username);
-            var fundiProfileRatings = _unitOfWork._fundiRatingsAndReviewRepository.GetAll().Where(q => q.UserId.ToString().ToLower().Equals(user.UserId.ToString().ToLower()));
+            var fundiUser = _serviceEndPoint.GetUserByEmailAddress(username);
+            var fundiProfile = _unitOfWork._fundiProfileRepository.GetAll().FirstOrDefault(q => q.UserId == fundiUser.UserId);
+            var fundiProfileRatings = _unitOfWork._fundiRatingsAndReviewRepository.GetAll().Where(q => q.FundiProfileId == fundiProfile.FundiProfileId);
 
-            if (user == null || !fundiProfileRatings.Any())
+            if (fundiUser == null || fundiProfile == null || !fundiProfileRatings.Any())
             {
                 return await Task.FromResult(NotFound(new { Message = $"user {username} profile not Found!" }));
             }

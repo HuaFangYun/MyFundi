@@ -609,9 +609,8 @@ C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\
 C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\images\paypal_logo.gif
 C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\images\ug-flag.gif
 C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\images\uk-flag.gif
-C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\jquery-star-rating\fontawesome-all.min.css
-C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\jquery-star-rating\jquery-3.6.0.slim.min.js
-C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\jquery-star-rating\jquery.star-rating.js
+C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\jquery-star-rating\jquery.star-rating-svg.js
+C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\jquery-star-rating\star-rating-svg.css
 C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\js\breakpoints.min.js
 C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\js\browser.min.js
 C:\Development\MyFundi\MyFundi.Web\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\ClientApp\dist\assets\js\datetimepicker\jquery.datetimepicker.min.css
