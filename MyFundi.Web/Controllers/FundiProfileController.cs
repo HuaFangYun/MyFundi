@@ -328,6 +328,7 @@ namespace MyFundi.Web.Controllers
                                   Review = j.Review,
                                   FundiProfile = _mapper.Map<FundiProfileViewModel>(fp),
                                   UserId= us.UserId,
+                                  User = _mapper.Map<UserViewModel>(us),
                                   DateUpdated = j.DateUpdated,
                                   WorkCategoryType = fwcat.WorkCategory.WorkCategoryType
                               };

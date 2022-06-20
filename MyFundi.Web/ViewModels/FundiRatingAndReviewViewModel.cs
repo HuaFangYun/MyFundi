@@ -12,6 +12,7 @@ namespace MyFundi.Web.ViewModels
         public int Rating { get; set; }
         public string Review { get; set; }
         public int FundiProfileId { get; set; }
+        public UserViewModel User { get; set; }
         public FundiProfileViewModel FundiProfile { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
         public DateTime DateUpdated { get; set; } = DateTime.Now;

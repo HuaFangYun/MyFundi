@@ -94,6 +94,7 @@ export class ClientFundiSearchComponent implements OnInit, AfterViewChecked {
       {
         initialRating: 0,
         starSize: 25,
+        useFullStars: true,
         callback: function (rating) {
           curthis.currentRating = rating;
         }
