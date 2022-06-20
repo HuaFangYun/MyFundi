@@ -293,6 +293,21 @@ namespace MyFundi.Web.Controllers
 
         
         [AuthorizeIdentity]
+        public async Task<IActionResult> RateFundiByProfileId([FromBody] FundiRatingAndReviewViewModel fundiRatingReview)
+        {
+
+            var fundiRated = _mapper.Map<FundiRatingAndReview>(fundiRatingReview);
+
+            if (fundiRated == null || fundiRated.FundiProfileId < 1 || fundiRated.UserId == null || string.IsNullOrEmpty(fundiRated.Review))
+            {
+                return await Task.FromResult(Ok(new { Message = "Fundi Not Found!" }));
+            }
+            _unitOfWork._fundiRatingsAndReviewRepository.Insert(fundiRated);
+            _unitOfWork.SaveChanges();
+
+            return await Task.FromResult(Ok(new { Message = "Fundi Profile Rated!" }));
+        }
+        [AuthorizeIdentity]
         [HttpPost]
         public async Task<IActionResult> PostAllFundiRatingsAndReviewsByCategories([FromBody] CategoriesViewModel categoriesViewModel)
         {

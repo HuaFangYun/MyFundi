@@ -49,6 +49,12 @@
               </div>
             </li>
           </ul>
+          <h5>Rate This Fundi</h5>
+          <form id="ratingForm-{{profileId}}">
+            <div id="fundiRating-{{profileId}}" class="rating"></div>
+            <textarea id="review-{{profileId}}" placeholder="Write review" rows="5" cols="20"></textarea>
+            <input type="button" id="{{profileId}}" class="but-primary" value="Rate Fundi" (click)="rateFundi($event)" />
+          </form>
         </div>
       </div>
       <div class="row" style="margin: 2px 0px !important;">

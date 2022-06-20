@@ -40,6 +40,8 @@
     <Content Remove="wwwroot\assets\images\paypal_logo.gif" />
     <Content Remove="wwwroot\assets\images\ug-flag.gif" />
     <Content Remove="wwwroot\assets\images\uk-flag.gif" />
+    <Content Remove="wwwroot\assets\jquery-star-rating\jquery.star-rating-svg.js" />
+    <Content Remove="wwwroot\assets\jquery-star-rating\star-rating-svg.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -93,6 +95,8 @@
     <None Include="wwwroot\assets\images\paypal_logo.gif" />
     <None Include="wwwroot\assets\images\ug-flag.gif" />
     <None Include="wwwroot\assets\images\uk-flag.gif" />
+    <None Include="wwwroot\assets\jquery-star-rating\star-rating-svg.css" />
+    <None Include="wwwroot\assets\jquery-star-rating\jquery.star-rating-svg.js" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

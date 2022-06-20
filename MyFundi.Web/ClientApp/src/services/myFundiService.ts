@@ -24,8 +24,9 @@ export class MyFundiService {
   public deleteworkCategoryByIdUrl: string = this.baseServerUrl + "/Administration/DeleteworkCategory";
   public deleteCourseUrl: string =  this.baseServerUrl + "/Administration/DeleteCourse";
   public getworkCategoryByIdUrl: string = this.baseServerUrl + "/Administration/GetworkCategoryById";
-  public getCourseByIdUrl: string = this.baseServerUrl + "/Administration/GetCourseById";
+  public getCourseByIdUrl: string = this.baseServerUrl + "/Administration/GetCourseById"; 
   public postCreateWorkCategoryUrl: string = this.baseServerUrl + "/FundiProfile/PostCreateWorkCategory";
+  public rateFundiByProfileIdUrl: string = this.baseServerUrl + "/FundiProfile/RateFundiByProfileId";
   public addFundiWorkCategorUrl: string = this.baseServerUrl + "/FundiProfile/AddFundiWorkCategory";
   public addFundiCertificateUrl: string = this.baseServerUrl + "/FundiProfile/AddFundiCertificate"; 
   public addFundiCourseUrl: string = this.baseServerUrl + "/FundiProfile/AddFundiCourse";
@@ -314,6 +315,22 @@ export class MyFundiService {
       return res;
     });
   }
+  RateFundiByProfileId(fundiRated:any): Observable<any> {
+
+    let body = JSON.stringify(fundiRated);
+    const headers = new HttpHeaders({ 'content-type': 'application/json' });
+
+    let requestOptions: any = {
+      url: this.rateFundiByProfileIdUrl,
+      headers: headers,
+      body: body
+    };
+    return this.httpClient.post(requestOptions.url, requestOptions.body, { 'headers': requestOptions.headers }).map((res: any) => {
+      return res;
+    });
+  }
+
+
   public AddFundiCourse(courseId: number,username: string): Observable<boolean> {
 
     let body = JSON.stringify({ courseId: courseId, username: username});
